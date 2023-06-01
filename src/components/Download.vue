@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Codeblock from './Codeblock.vue';
-
 </script>
 
 <template>
@@ -29,6 +28,9 @@ import Codeblock from './Codeblock.vue';
     </div> -->
     <p id="load">
       Then load in chrome:
+      <div>
+        <img src="./gifs/loading_Extension_Demo.gif" alt="load-extension-demo">
+      </div>
     </p>
   </section>
 </template>
@@ -46,6 +48,7 @@ import Codeblock from './Codeblock.vue';
     font-family: "Montserrat";
     font-weight: 700;
     line-height: 44px;
+    margin-bottom: 0;
   }
   
   p {
@@ -62,6 +65,7 @@ import Codeblock from './Codeblock.vue';
 
   #download {
     height: 58px;
+    margin-bottom: 0;
   }
 
   #load {
@@ -78,14 +82,18 @@ import Codeblock from './Codeblock.vue';
     border-radius: $borderRadius;
   }
 
-  .codeline {
-    color: white;
-    width: 187px;
-    height: 110px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
+  // .codeline {
+  //   color: white;
+  //   width: 187px;
+  //   height: 110px;
+  //   font-family: 'Montserrat';
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 18px;
+  //   line-height: 22px;
+  // }
+
+  img {
+    display: block;
   }
 </style>

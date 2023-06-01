@@ -2,6 +2,7 @@
 import Contributor from "./Contributor.vue";
 import Intro from "./Intro.vue";
 import Download from "./Download.vue";
+import Demo from "./Demo.vue";
 const contributors = [
   {
     githubHandle: 'annaduong94',
@@ -32,21 +33,24 @@ const contributors = [
     <div>
       <Intro/>
     </div>
-    <Download/>
-    <section>
+    <div id="mid-gradient">
+      <Download/>
+      <section>
       <h3 class="tertiary-title">About</h3>
-    </section>
-    <section>
-      <h3 class="tertiary-title">Contributors</h3>
+      </section>
+      <Demo />
+      <section id="bottom-gradient">
+       <h3 class="tertiary-title">Contributors</h3>
       <div class="grid">
-     <Contributor 
-        v-for="contributor in contributors"
-        :github="contributor.githubHandle"
-        :linkedin="contributor.linkedin"
-        :name="contributor.name"
-      />
-    </div>
+        <Contributor 
+          v-for="contributor in contributors"
+          :github="contributor.githubHandle"
+          :linkedin="contributor.linkedin"
+          :name="contributor.name"
+        />
+      </div>
     </section>
+    </div>
   </div>
 </main>
 </template>
@@ -67,4 +71,11 @@ main {
   grid-template-columns: 1fr 1fr;
 }
 
+#mid-gradient {
+  background-color: opacity("secondaryWhite");
+}
+
+#bottom-gradient {
+  background: radial-gradient(123.15% 389.49% at -2% 6.91%, #028090 0%, #FDF6F5 29.81%, #E4FDE1 61.77%, #FDF6F5 100%);
+}
 </style>
