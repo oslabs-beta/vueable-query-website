@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Contributor from "./Contributor.vue";
-import IconColorLogo from "./icons/IconColorLogo.vue";
 import Intro from "./Intro.vue";
 import Download from "./Download.vue";
 const contributors = [
@@ -39,12 +38,14 @@ const contributors = [
     </section>
     <section>
       <h3 class="tertiary-title">Contributors</h3>
-     <Contributor
+      <div class="grid">
+     <Contributor 
         v-for="contributor in contributors"
         :github="contributor.githubHandle"
         :linkedin="contributor.linkedin"
         :name="contributor.name"
       />
+    </div>
     </section>
   </div>
 </main>
@@ -60,6 +61,10 @@ main {
   }
   padding-bottom: 5em;
   // background: linear-gradient(141deg, rgba(228,253,225,1) 0%, rgba(255,255,255,1) 59%, rgba(244,91,105,1) 100%);
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 </style>
