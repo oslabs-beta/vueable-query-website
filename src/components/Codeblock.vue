@@ -28,8 +28,6 @@
     background-color: #000;
     color: #eee;
     font-family: 'Ubuntu Mono', monospace;
-    * {
-    }
     border: $border;
     box-shadow: $shadow;
     }

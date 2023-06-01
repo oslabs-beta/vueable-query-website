@@ -35,10 +35,10 @@ const contributors = [
     </div>
     <Download/>
     <section>
-      <h3>About</h3>
+      <h3 class="tertiary-title">About</h3>
     </section>
     <section>
-      <h3>Contributors</h3>
+      <h3 class="tertiary-title">Contributors</h3>
      <Contributor
         v-for="contributor in contributors"
         :github="contributor.githubHandle"
