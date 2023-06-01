@@ -9,10 +9,7 @@ import Codeblock from './Codeblock.vue';
     <p id="download">
       Download in just four steps!
     </p>
-    
     <Codeblock/>
-
-
     <p id="load">
       Then load in chrome:
       <div>
@@ -59,7 +56,6 @@ import Codeblock from './Codeblock.vue';
   #load {
     height: 29px;
   }
-
 
   img {
     box-sizing: border-box;
