@@ -94,6 +94,12 @@ import Codeblock from './Codeblock.vue';
   // }
 
   img {
-    display: block;
+    box-sizing: border-box;
+    width: 428px;
+    height: 93px;
+    background: #E7E7E7;
+    border: 1px solid rgba(7, 29, 36, 0.3);
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
   }
 </style>
