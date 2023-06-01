@@ -60,6 +60,7 @@ const contributors = [
 main {
   display: flex;
   justify-content: center;
+  background: radial-gradient(123.15% 389.49% at -2% 6.91%, #028090 0%, #FDF6F5 29.81%, #E4FDE1 61.77%, #FDF6F5 100%);
  .inner {
   width: $centerProportion;
   }
@@ -75,7 +76,9 @@ main {
   background-color: opacity("secondaryWhite");
 }
 
-#bottom-gradient {
-  background: radial-gradient(123.15% 389.49% at -2% 6.91%, #028090 0%, #FDF6F5 29.81%, #E4FDE1 61.77%, #FDF6F5 100%);
-}
+// #bottom-gradient {
+//   background: radial-gradient(123.15% 389.49% at -2% 6.91%, #028090 0%, #FDF6F5 29.81%, #E4FDE1 61.77%, #FDF6F5 100%);
+// }
+
+
 </style>

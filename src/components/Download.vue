@@ -12,20 +12,7 @@ import Codeblock from './Codeblock.vue';
     
     <Codeblock/>
 
-    <!-- <div class="codeblock">
-      <div class="codeline">
-      git clone https://github.com/oslabs-beta/Vueable-query.git <br/>
-      </div>
-      <div class="codeline">
-        $cd Vueable-Query
-      </div>
-      <div class="codeline">
-        $npm install
-      </div>
-      <div class="codeline">
-        npm run build
-      </div>
-    </div> -->
+
     <p id="load">
       Then load in chrome:
       <div>
@@ -33,6 +20,7 @@ import Codeblock from './Codeblock.vue';
       </div>
     </p>
   </section>
+
 </template>
 
 <style scoped lang="scss">
@@ -72,31 +60,11 @@ import Codeblock from './Codeblock.vue';
     height: 29px;
   }
 
-  .codeblock {
-    box-sizing: border-box;
-    // width: 988px;
-    // height: 133px;
-    background: #000000;
-    border: $border;
-    box-shadow: $shadow;
-    border-radius: $borderRadius;
-  }
-
-  // .codeline {
-  //   color: white;
-  //   width: 187px;
-  //   height: 110px;
-  //   font-family: 'Montserrat';
-  //   font-style: normal;
-  //   font-weight: 400;
-  //   font-size: 18px;
-  //   line-height: 22px;
-  // }
 
   img {
     box-sizing: border-box;
     width: 428px;
-    height: 93px;
+ 
     background: #E7E7E7;
     border: 1px solid rgba(7, 29, 36, 0.3);
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
