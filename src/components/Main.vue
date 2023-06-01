@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Contributor from "./Contributor.vue";
+import Codeblock from "./Codeblock.vue";
 const contributors = [
   {
     githubHandle: 'annaduong94',
@@ -42,20 +43,7 @@ const contributors = [
       <p>
         Download in just four steps
       </p>
-      <div class="codeblock">
-        <div class="codeline">
-        git clone https://github.com/oslabs-beta/Vueable-query.git <br/>
-        </div>
-        <div class="codeline">
-          cd Vueable-Query
-        </div>
-        <div class="codeline">
-          npm install
-        </div>
-        <div class="codeline">
-          npm run build
-        </div>
-      </div>
+      <Codeblock />
       <p>
         Then load in chrome:
       </p>
