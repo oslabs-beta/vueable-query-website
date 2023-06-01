@@ -5,7 +5,6 @@ import Header from "./components/Header.vue";
 </script>
 
 <template>
-
   <Header />
   <div id="top">
     <div id="bottom">
@@ -13,6 +12,7 @@ import Header from "./components/Header.vue";
     </div>
   </div>
   <Footer />
+
 </template>
 
 <style lang="scss">
@@ -27,13 +27,16 @@ import Header from "./components/Header.vue";
 
   .title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 72px;
+    font-size: 48px;
   }
 
   .secondary-title, .tertiary-title {
     font-family: 'Montserrat', sans-serif;
   }
 
+  body{
+    min-width: 460px;
+  }
   #top{
     width:100%;
     background-image: url('./components/icons/header_gradient.svg');
@@ -52,11 +55,11 @@ import Header from "./components/Header.vue";
 
 
   .secondary-title {
-    font-size: 48px;
+    font-size: 36px;
   }
 
   .tertiary-title {
-    font-size: 36px;
+    font-size: 28px;
   }
   
 </style>

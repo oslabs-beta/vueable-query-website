@@ -15,7 +15,7 @@
 
   img {
     box-sizing: border-box;
-    width: 800px;
+    width: 100%;
     background: opacity("grey-100");
     border: $border;
     box-shadow: $shadow;
