@@ -32,7 +32,7 @@
     margin-top: 3rem;
 
     .inner {
-      width: 75%;
+      width: $centerProportion;
       display: flex;
       justify-content: space-between;
 
