@@ -5,9 +5,9 @@ import Header from "./components/Header.vue";
 </script>
 
 <template>
-<Header />
-<Main />
-<Footer />
+  <Header />
+  <Main />
+  <Footer />
 </template>
 
 <style lang="scss">
