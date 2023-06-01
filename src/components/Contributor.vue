@@ -4,7 +4,8 @@ import type { ComputedRef } from 'vue';
 
 const props = defineProps<{
   github: string,
-  linkedin: string
+  linkedin: string,
+  name: string
 }>();
 
 /* can optionally add `?size=${pix where <= 460}` */
@@ -18,6 +19,8 @@ const getPic: ComputedRef<string> = computed(() => gitHubAddress.value + '.png')
         <img class="profile" :src="getPic"/>
     </div>
     <div class="contrib-container">
+        {{ props.name }}
+        &vert;
         <a :href="gitHubAddress">
             {{ '@' + props.github }}
         </a>
@@ -42,6 +45,7 @@ const getPic: ComputedRef<string> = computed(() => gitHubAddress.value + '.png')
   .contrib-container {
     display: flex;
     align-items: center;
+    color: opacity("secondaryBlack-80");
     a {
       color: opacity("secondaryBlack-80");
     }

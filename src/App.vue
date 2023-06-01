@@ -1,29 +1,11 @@
 <script setup lang="ts">
-import Contributor from "./components/Contributor.vue";
 import Footer from "./components/Footer.vue";
+import Main from "./components/Main.vue";
 import Header from "./components/Header.vue";
-
-const contributors = [
-  {
-    githubHandle: 'annaduong94',
-    linkedin: 'https://www.linkedin.com/in/anna-duong-a8719823a/'
-  },
-  {
-    githubHandle: 'eswitbeck',
-    linkedin: 'https://www.linkedin.com/in/eswitbeck/'
-  },
-  {
-    githubHandle: 'ectjon',
-    linkedin: 'https://www.linkedin.com/in/erictjon/'
-  },
-  {
-    githubHandle: 'brand0n-y00n',
-    linkedin: 'https://www.linkedin.com/in/brandon-yoon-75672a1b7/'
-  },
-]
 </script>
 
 <template>
+<<<<<<< HEAD
   <Header />
 
 <main id="main">
@@ -72,6 +54,10 @@ const contributors = [
     />
   </section>
 </main>
+=======
+<Header />
+<Main />
+>>>>>>> 61b4e69ad4f6fe83e6728328c833aea4a5e7276c
 <Footer />
 </template>
 
