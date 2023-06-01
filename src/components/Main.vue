@@ -29,7 +29,7 @@ const contributors = [
 
 <template>
   <main>
-  <!-- <HeaderGradient/> -->
+
   <div class="spacing">
     <div class="inner">
       <div>
@@ -37,9 +37,13 @@ const contributors = [
       </div>
       <div id="mid-gradient">
         <Download/>
-        <section>
-          <h3 class="tertiary-title">About</h3>
-        </section>
+        <h3 class="tertiary-title">Features</h3>
+          <ul>
+            <li>A timeline to visualize the query history</li>
+            <li>A text panel to display all relevant queries under their query key</li>
+            <li>Highlighting on click and hover</li>
+            <li>Tooltip displayed on hover</li>
+          </ul>
         <Demo />
         <section id="bottom-gradient">
         <h3 class="tertiary-title">Contributors</h3>
@@ -55,7 +59,6 @@ const contributors = [
     </div>
   </div>
   </div>
-  <!-- <FooterGradient/> -->
 </main>
 </template>
 
@@ -68,6 +71,14 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  li{  
+    color: opacity("secondaryBlack-80");
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
   }
  .inner {
   width: $centerProportion;
