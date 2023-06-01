@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import Contributor from "./Contributor.vue";
+import IconColorLogo from "./icons/IconColorLogo.vue";
+import Intro from "./Intro.vue";
+import Download from "./Download.vue";
 const contributors = [
   {
     githubHandle: 'annaduong94',
@@ -25,41 +28,12 @@ const contributors = [
 </script>
 
 <template>
-<main>
+<main class="main">
   <div class="inner">
     <div>
-      <svg>
-      </svg>
-      <h1>
-        Vueable Query
-      </h1>
-      <h2>
-        See the metrics you've been missing
-      </h2>
+      <Intro/>
     </div>
-    <section>
-      <h3>Download</h3>
-      <p>
-        Download in just four steps
-      </p>
-      <div class="codeblock">
-        <div class="codeline">
-        git clone https://github.com/oslabs-beta/Vueable-query.git <br/>
-        </div>
-        <div class="codeline">
-          cd Vueable-Query
-        </div>
-        <div class="codeline">
-          npm install
-        </div>
-        <div class="codeline">
-          npm run build
-        </div>
-      </div>
-      <p>
-        Then load in chrome:
-      </p>
-    </section>
+    <Download/>
     <section>
       <h3>About</h3>
     </section>
@@ -84,6 +58,8 @@ main {
  .inner {
   width: $centerProportion;
   }
+  padding-bottom: 5em;
+  // background: linear-gradient(141deg, rgba(228,253,225,1) 0%, rgba(255,255,255,1) 59%, rgba(244,91,105,1) 100%);
 }
 
 </style>
