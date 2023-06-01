@@ -31,15 +31,15 @@ const contributors = [
     <div>
       <svg>
       </svg>
-      <h1>
+      <h1 class="title">
         Vueable Query
       </h1>
-      <h2>
+      <h2 class="secondary-title">
         See the metrics you've been missing
       </h2>
     </div>
     <section>
-      <h3>Download</h3>
+      <h3 class="tertiary-title">Download</h3>
       <p>
         Download in just four steps
       </p>
@@ -49,10 +49,10 @@ const contributors = [
       </p>
     </section>
     <section>
-      <h3>About</h3>
+      <h3 class="tertiary-title">About</h3>
     </section>
     <section>
-      <h3>Contributors</h3>
+      <h3 class="tertiary-title">Contributors</h3>
      <Contributor
         v-for="contributor in contributors"
         :github="contributor.githubHandle"
