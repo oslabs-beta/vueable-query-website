@@ -62,7 +62,7 @@ import IconMedium from "./icons/IconMedium.vue";
     margin: 15px;
     text-align: center;
   }
-  a{
+  span a{
     margin: 10px;
     text-decoration: none;
   }

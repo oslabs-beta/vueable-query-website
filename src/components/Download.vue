@@ -1,26 +1,32 @@
 <script setup lang="ts">
+import Codeblock from './Codeblock.vue';
+
 </script>
 
 <template>
   <section>
+    
     <h3>Download</h3>
     <p id="download">
       Download in just four steps!
     </p>
-    <div class="codeblock">
+    
+    <Codeblock/>
+
+    <!-- <div class="codeblock">
       <div class="codeline">
       git clone https://github.com/oslabs-beta/Vueable-query.git <br/>
       </div>
       <div class="codeline">
-        cd Vueable-Query
+        $cd Vueable-Query
       </div>
       <div class="codeline">
-        npm install
+        $npm install
       </div>
       <div class="codeline">
         npm run build
       </div>
-    </div>
+    </div> -->
     <p id="load">
       Then load in chrome:
     </p>
@@ -32,9 +38,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&family=Open+Sans&display=swap');
 
   h3 {
-    position: absolute;
-    width: 388px;
-    height: 45px;
+    // position: absolute;
+    // width: 388px;
+    // height: 45px;
     color: opacity("primaryBlack-85");
     font-size: 36px;
     font-family: "Montserrat";
@@ -44,8 +50,8 @@
   
   p {
     color: opacity("secondaryBlack-80");
-    position: absolute;
-    width: 388px;
+    // position: absolute;
+    // width: 388px;
 
     font-family: 'Lato';
     font-style: normal;
@@ -64,9 +70,8 @@
 
   .codeblock {
     box-sizing: border-box;
-    position: absolute;
-    width: 988px;
-    height: 133px;
+    // width: 988px;
+    // height: 133px;
     background: #000000;
     border: $border;
     box-shadow: $shadow;
@@ -75,7 +80,6 @@
 
   .codeline {
     color: white;
-    position: absolute;
     width: 187px;
     height: 110px;
     font-family: 'Montserrat';
