@@ -4,11 +4,9 @@ import IconGithub from "./icons/IconGithub.vue";
 import IconLinkedin from "./icons/IconLinkedin.vue";
 import IconLogo from "./icons/IconLogo.vue";
 import IconMedium from "./icons/IconMedium.vue";
-
 </script>
 
 <template>
-  
   <div id="header-container">
     <header>
       <div class="title-group">
@@ -38,11 +36,14 @@ import IconMedium from "./icons/IconMedium.vue";
   
   #header-container {
     display: flex;
-    background-color: #F45B69;
+    background-color: opacity("pink-100");
     justify-content: center;
+    border-bottom: $border;
+    box-shadow: $shadow;
   }
-  .links-group {
-
+  .links-group, .title-group, .title-group h3 {
+    display: flex;
+    align-items: center;
     column-gap: 5px;
   }
   header{
