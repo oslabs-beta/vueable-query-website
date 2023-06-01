@@ -3,17 +3,19 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
 </script>
 
 <template>
-  <div>
-    <div class = 'logo'>
-      <IconColorLogo />
+  <div id="top-gradient">
+    <div>
+      <div class = 'logo'>
+        <IconColorLogo />
+      </div>
+      <h1 class="title">
+        Vueable Query
+      </h1>
+      <h2 class="secondary-title">
+        See the metrics you've been missing!
+      </h2>
     </div>
-    <h1 class="title">
-      Vueable Query
-    </h1>
-    <h2 class="secondary-title">
-      See the metrics you've been missing!
-    </h2>
-  </div>
+</div>
 </template>
 
 <style scoped lang="scss">
@@ -23,6 +25,7 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   h1 {
     color: opacity("primaryBlack");
     text-align: center;
+    margin: 10;
   }
 
   .logo{
@@ -33,6 +36,8 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   h2 {
     color: opacity("secondaryBlack-85");
     text-align: center;
+
   }
+
 
 </style>

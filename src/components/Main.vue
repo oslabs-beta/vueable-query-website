@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import Contributor from "./Contributor.vue";
-import IconColorLogo from "./icons/IconColorLogo.vue";
 import Intro from "./Intro.vue";
 import Download from "./Download.vue";
+import Demo from "./Demo.vue";
 const contributors = [
   {
     githubHandle: 'annaduong94',
@@ -28,24 +28,36 @@ const contributors = [
 </script>
 
 <template>
-<main class="main">
-  <div class="inner">
-    <div>
-      <Intro/>
+  <main>
+
+  <div class="spacing">
+    <div class="inner">
+      <div>
+        <Intro/>
+      </div>
+      <div id="mid-gradient">
+        <Download/>
+        <h3 class="tertiary-title">Features</h3>
+          <ul>
+            <li>A timeline to visualize the query history</li>
+            <li>A text panel to display all relevant queries under their query key</li>
+            <li>Highlighting on click and hover</li>
+            <li>Tooltip displayed on hover</li>
+          </ul>
+        <Demo />
+        <section id="bottom-gradient">
+        <h3 class="tertiary-title">Contributors</h3>
+        <div>
+          <Contributor 
+            v-for="contributor in contributors"
+            :github="contributor.githubHandle"
+            :linkedin="contributor.linkedin"
+            :name="contributor.name"
+          />
+        </div>
+        </section>
     </div>
-    <Download/>
-    <section>
-      <h3 class="tertiary-title">About</h3>
-    </section>
-    <section>
-      <h3 class="tertiary-title">Contributors</h3>
-     <Contributor
-        v-for="contributor in contributors"
-        :github="contributor.githubHandle"
-        :linkedin="contributor.linkedin"
-        :name="contributor.name"
-      />
-    </section>
+  </div>
   </div>
 </main>
 </template>
@@ -55,11 +67,23 @@ const contributors = [
 main {
   display: flex;
   justify-content: center;
+  .spacing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  li{  
+    color: opacity("secondaryBlack-80");
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
  .inner {
   width: $centerProportion;
   }
   padding: 3em 0 5em 0;
-  // background: linear-gradient(141deg, rgba(228,253,225,1) 0%, rgba(255,255,255,1) 59%, rgba(244,91,105,1) 100%);
+  /*background-color: opacity("secondaryWhite");*/
 }
-
 </style>
