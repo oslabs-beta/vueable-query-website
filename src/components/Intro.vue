@@ -23,6 +23,7 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   h1 {
     color: opacity("primaryBlack");
     text-align: center;
+    margin: 0;
   }
 
   .logo{
@@ -33,6 +34,7 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   h2 {
     color: opacity("secondaryBlack-85");
     text-align: center;
+    margin: 0;
   }
 
 </style>
