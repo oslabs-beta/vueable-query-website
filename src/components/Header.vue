@@ -11,7 +11,7 @@ import IconMedium from "./icons/IconMedium.vue";
     <div class="inner">
       <div class="title-group">
         <h3>
-          <IconLogo/> Vueable Query
+          <a href=""><IconLogo/> </a>Vueable Query
         </h3>
       </div>
       <div class="links-group">
