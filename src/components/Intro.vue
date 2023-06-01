@@ -21,7 +21,6 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat&family=Open+Sans&display=swap');
 
   h1 {
-
     font-size: 72px;
     font-family: "Open Sans";
     color: opacity("primaryBlack");

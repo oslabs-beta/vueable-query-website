@@ -58,12 +58,13 @@ import IconMedium from "./icons/IconMedium.vue";
   }
   h3 {
     font-family: "Open Sans";
-    font-size: 48px;
+    font-size: 32px;
     margin: 15px;
     text-align: center;
   }
-  span a{
-    margin: 10px;
-    text-decoration: none;
+  a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
   }
 </style>
