@@ -1,0 +1,37 @@
+@use "sass:color";
+@use "sass:map";
+
+$mainColors: (
+  "primaryBlack": #06161B,
+  "secondaryBlack": #071D24,
+  "grey": #E7E7E7,
+  "navy": #114B5F,
+  "teal": #028090,
+  "blue": #456990,
+  "lightGreen": #E4FDE1,
+  "pink": #F45B69,
+  "primaryWhite": #FCF0EF,
+  "secondaryWhite": #FDF6F5,
+);
+
+$opacityColors: ();
+
+@each $name, $hex in $mainColors {
+  @for $i from 0 through 20 {
+    $opacityColors: map.set(
+      $opacityColors,
+      "#{$name}-#{100 - $i * 5}",
+      color.adjust($hex, $alpha: -($i * 0.05))
+    );
+  }
+}
+
+// all colors are available at opacity("<name>-<opacity>")
+// e.g. opacity("black-30") returns black at 30%
+@function opacity($string) {
+  @return map.get($opacityColors, $string);
+}
+
+$borderRadius: 10px;
+$border: 1px solid opacity("secondaryBlack-30");
+$shadow: 0 8px 8px 2px color.adjust(#000, $alpha: -0.9);
