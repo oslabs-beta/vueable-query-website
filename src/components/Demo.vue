@@ -2,6 +2,9 @@
 </script>
 
 <template>
+  <h3 class="tertiary-title">
+    Demo
+  </h3>
   <div>
     <img src="./gifs/demo.gif" alt="devtools-demo">
   </div>
@@ -13,10 +16,9 @@
   img {
     box-sizing: border-box;
     width: 800px;
-    
-    background: #E7E7E7;
-    border: 1px solid rgba(7, 29, 36, 0.3);
-    box-shadow: 0px 8px 8px 2px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    background: opacity("grey-100");
+    border: $border;
+    box-shadow: $shadow;
+    border-radius: $borderRadius;
   }
 </style>

@@ -38,7 +38,6 @@ const getPic: ComputedRef<string> = computed(() => gitHubAddress.value + '.png')
     padding: 0.5rem;
     margin: 0.5rem;
     display: flex;
-    flex-direction: column;
     * {
       margin: 0.5rem;
     }

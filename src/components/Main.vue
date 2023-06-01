@@ -28,30 +28,34 @@ const contributors = [
 </script>
 
 <template>
-<main class="main">
-  <div class="inner">
-    <div>
-      <Intro/>
-    </div>
-    <div id="mid-gradient">
-      <Download/>
-      <section>
-      <h3 class="tertiary-title">About</h3>
-      </section>
-      <Demo />
-      <section id="bottom-gradient">
-       <h3 class="tertiary-title">Contributors</h3>
-      <div class="grid">
-        <Contributor 
-          v-for="contributor in contributors"
-          :github="contributor.githubHandle"
-          :linkedin="contributor.linkedin"
-          :name="contributor.name"
-        />
+  <main>
+  <!-- <HeaderGradient/> -->
+  <div class="spacing">
+    <div class="inner">
+      <div>
+        <Intro/>
       </div>
-    </section>
+      <div id="mid-gradient">
+        <Download/>
+        <section>
+          <h3 class="tertiary-title">About</h3>
+        </section>
+        <Demo />
+        <section id="bottom-gradient">
+        <h3 class="tertiary-title">Contributors</h3>
+        <div>
+          <Contributor 
+            v-for="contributor in contributors"
+            :github="contributor.githubHandle"
+            :linkedin="contributor.linkedin"
+            :name="contributor.name"
+          />
+        </div>
+        </section>
     </div>
   </div>
+  </div>
+  <!-- <FooterGradient/> -->
 </main>
 </template>
 
@@ -60,25 +64,15 @@ const contributors = [
 main {
   display: flex;
   justify-content: center;
-  background: radial-gradient(123.15% 389.49% at -2% 6.91%, #028090 0%, #FDF6F5 29.81%, #E4FDE1 61.77%, #FDF6F5 100%);
+  .spacing {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
  .inner {
   width: $centerProportion;
   }
   padding: 3em 0 5em 0;
-  // background: linear-gradient(141deg, rgba(228,253,225,1) 0%, rgba(255,255,255,1) 59%, rgba(244,91,105,1) 100%);
+  /*background-color: opacity("secondaryWhite");*/
 }
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-#mid-gradient {
-  background-color: opacity("secondaryWhite");
-}
-
-// #bottom-gradient {
-//   background: radial-gradient(123.15% 389.49% at -2% 6.91%, #028090 0%, #FDF6F5 29.81%, #E4FDE1 61.77%, #FDF6F5 100%);
-// }
-
-
 </style>

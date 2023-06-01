@@ -3,10 +3,9 @@
 
 <template> 
 <section>
-    <h3>Features</h3>
+    <h3>About</h3>
   </section>
 </template>
 
 <style scoped lang="scss">
-
 </style>

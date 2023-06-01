@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import FooterGradientVue from './icons/FooterGradient.vue';
 </script>
 
 <template>

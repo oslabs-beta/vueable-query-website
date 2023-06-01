@@ -5,8 +5,13 @@ import Header from "./components/Header.vue";
 </script>
 
 <template>
+
   <Header />
-  <Main />
+  <div id="top">
+    <div id="bottom">
+      <Main />
+    </div>
+  </div>
   <Footer />
 </template>
 
@@ -29,9 +34,28 @@ import Header from "./components/Header.vue";
     font-family: 'Montserrat', sans-serif;
   }
 
+  #top{
+    width:100%;
+    background-image: url('./components/icons/header_gradient.svg');
+    background-position: top; /* Center the image */
+    background-repeat: no-repeat; 
+    background-size:contain;
+  }
+  #bottom{
+    width:100%;
+    background-image: url('./components/icons/footer_gradient.svg');
+    background-position: bottom; /* Center the image */
+    background-repeat: no-repeat; 
+    background-size:contain;
+  }
+
 
 
   .secondary-title {
+    font-size: 48px;
+  }
+
+  .tertiary-title {
     font-size: 36px;
   }
   

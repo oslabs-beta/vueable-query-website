@@ -4,8 +4,8 @@ import IconGithub from "./icons/IconGithub.vue";
 import IconLinkedin from "./icons/IconLinkedin.vue";
 import IconLogo from "./icons/IconLogo.vue";
 import IconMedium from "./icons/IconMedium.vue";
-</script>
 
+</script>
 <template>
   <header>
     <div class="inner">
