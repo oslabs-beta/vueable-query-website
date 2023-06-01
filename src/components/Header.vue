@@ -1,42 +1,69 @@
 <script setup lang="ts">
 import { ref } from "vue";
-
+import IconGithub from "./icons/IconGithub.vue";
+import IconLinkedin from "./icons/IconLinkedin.vue";
+import IconLogo from "./icons/IconLogo.vue";
+import IconMedium from "./icons/IconMedium.vue";
 </script>
 
 <template>
-  <header>
-    <div class="title group">
-
-      <h3>
-        Vueable Query
-      </h3>
-    </div>
-    <div class="links group">
-      <a>
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" fill="currentColor" class="bi bi-medium" viewBox="0 0 16 16">
-          <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8zm4.95 0c0 2.34-1.01 4.236-2.256 4.236-1.246 0-2.256-1.897-2.256-4.236 0-2.34 1.01-4.236 2.256-4.236 1.246 0 2.256 1.897 2.256 4.236zM16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795z"/>
-        </svg>
-      </a>
-      <a>
-
-      </a>
-      <a>
-
-      </a>
-    </div>
-  </header>
+  <div id="header-container">
+    <header>
+      <div class="title-group">
+        <h3>
+          <IconLogo/> Vueable Query
+        </h3>
+      </div>
+      <div class="links-group">
+        <a href="https://github.com/oslabs-beta/Vueable-query">
+          <IconGithub/>
+        </a>
+        <span>|</span>
+        <a href="https://www.linkedin.com/company/vueable-query/?viewAsMember=true">
+          <IconLinkedin/>
+        </a>
+        <span>|</span>
+        <a href="">
+          <IconMedium/>
+        </a>
+      </div>
+    </header>
+  </div>
 </template>
 
 <style scoped lang="scss">
 @import "../variables.scss";
-
-  header {
+  
+  #header-container {
     display: flex;
-    justify-content: space-around;
-    background-color: rgb(244,91,105);
+    background-color: opacity("pink-100");
+    justify-content: center;
+    border-bottom: $border;
+    box-shadow: $shadow;
   }
-
+  .links-group, .title-group, .title-group h3 {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+  header{
+    width: $centerProportion;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }  
+  span {
+    font-size: 30px;
+  }
   h3 {
     font-family: "Open Sans";
+    font-size: 24px;
+    margin: 15px;
+    text-align: center;
+  }
+  a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
   }
 </style>

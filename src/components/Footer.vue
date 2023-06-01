@@ -1,8 +1,10 @@
 <script setup lang="ts">
+import FooterGradientVue from './icons/FooterGradient.vue';
 </script>
 
 <template>
   <footer>
+    <FooterGradient />
     <div class="inner">
       <div class="col">
         <a
@@ -29,10 +31,10 @@
     border-top: $border;
     display: flex;
     justify-content: center;
-    margin-top: 3rem;
-
+    // margin-top: 3rem;
+    background-image: 'footer_gradient.svg';
     .inner {
-      width: 75%;
+      width: $centerProportion;
       display: flex;
       justify-content: space-between;
 
