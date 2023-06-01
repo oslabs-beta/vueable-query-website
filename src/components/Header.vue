@@ -7,8 +7,8 @@ import IconMedium from "./icons/IconMedium.vue";
 </script>
 
 <template>
-  <div id="header-container">
-    <header>
+  <header>
+    <div class="inner">
       <div class="title-group">
         <h3>
           <IconLogo/> Vueable Query
@@ -27,31 +27,31 @@ import IconMedium from "./icons/IconMedium.vue";
           <IconMedium/>
         </a>
       </div>
-    </header>
-  </div>
+    </div>
+  </header>
 </template>
 
 <style scoped lang="scss">
 @import "../variables.scss";
   
-  #header-container {
+  header{
     display: flex;
     background-color: opacity("pink-100");
     justify-content: center;
     border-bottom: $border;
     box-shadow: $shadow;
+  }  
+  .inner {
+    width: $centerProportion;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .links-group, .title-group, .title-group h3 {
     display: flex;
     align-items: center;
     column-gap: 5px;
   }
-  header{
-    width: $centerProportion;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }  
   span {
     font-size: 30px;
   }

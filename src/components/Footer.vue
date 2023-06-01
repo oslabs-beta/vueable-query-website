@@ -17,7 +17,6 @@ import FooterGradientVue from './icons/FooterGradient.vue';
         <a href="https://github.com/oslabs-beta/Vueable-query/">GitHub Repo</a>
         <a href="">Medium Article</a>
         <a href="https://www.linkedin.com/company/vueable-query/about/">LinkedIn</a>
-        <a href="">Hacker News Post</a>
       </div>
     </div>
   </footer>
