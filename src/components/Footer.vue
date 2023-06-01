@@ -14,7 +14,7 @@
       </div>
       <div class="col">
         <a href="https://github.com/oslabs-beta/Vueable-query/">GitHub Repo</a>
-        <a href="">Medium Article</a>
+        <a href="https://medium.com/@brandon.yoon024/vueable-query-see-the-metrics-youve-been-missing-6b17580c5a67">Medium Article</a>
         <a href="https://www.linkedin.com/company/vueable-query/about/">LinkedIn</a>
       </div>
     </div>

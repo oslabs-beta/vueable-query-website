@@ -23,7 +23,7 @@ import IconMedium from "./icons/IconMedium.vue";
           <IconLinkedin/>
         </a>
         <span>|</span>
-        <a href="">
+        <a href="https://medium.com/@brandon.yoon024/vueable-query-see-the-metrics-youve-been-missing-6b17580c5a67">
           <IconMedium/>
         </a>
       </div>
