@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import Contributor from "./Contributor.vue";
-import Codeblock from "./Codeblock.vue";
+import IconColorLogo from "./icons/IconColorLogo.vue";
+import Intro from "./Intro.vue";
+import Download from "./Download.vue";
 const contributors = [
   {
     githubHandle: 'annaduong94',
@@ -26,28 +28,12 @@ const contributors = [
 </script>
 
 <template>
-<main>
+<main class="main">
   <div class="inner">
     <div>
-      <svg>
-      </svg>
-      <h1 class="title">
-        Vueable Query
-      </h1>
-      <h2 class="secondary-title">
-        See the metrics you've been missing
-      </h2>
+      <Intro/>
     </div>
-    <section>
-      <h3 class="tertiary-title">Download</h3>
-      <p>
-        Download in just four steps
-      </p>
-      <Codeblock />
-      <p>
-        Then load in chrome:
-      </p>
-    </section>
+    <Download/>
     <section>
       <h3 class="tertiary-title">About</h3>
     </section>
@@ -72,6 +58,8 @@ main {
  .inner {
   width: $centerProportion;
   }
+  padding-bottom: 5em;
+  // background: linear-gradient(141deg, rgba(228,253,225,1) 0%, rgba(255,255,255,1) 59%, rgba(244,91,105,1) 100%);
 }
 
 </style>

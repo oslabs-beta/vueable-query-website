@@ -37,5 +37,4 @@ import Header from "./components/Header.vue";
     font-size: 36px;
   }
   
-
 </style>
