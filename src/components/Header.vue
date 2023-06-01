@@ -35,9 +35,7 @@ import IconMedium from "./icons/IconMedium.vue";
 
 <style scoped lang="scss">
 @import "../variables.scss";
-  .title-group {
-
-  }
+  
   #header-container {
     display: flex;
     background-color: #F45B69;
@@ -58,7 +56,7 @@ import IconMedium from "./icons/IconMedium.vue";
   }
   h3 {
     font-family: "Open Sans";
-    font-size: 32px;
+    font-size: 24px;
     margin: 15px;
     text-align: center;
   }

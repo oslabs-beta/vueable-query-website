@@ -29,9 +29,7 @@ import Header from "./components/Header.vue";
     font-family: 'Montserrat', sans-serif;
   }
 
-  .secondary-title {
-    font-size: 48px;
-  }
+
 
   .secondary-title {
     font-size: 36px;
