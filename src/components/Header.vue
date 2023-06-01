@@ -64,6 +64,6 @@ import IconMedium from "./icons/IconMedium.vue";
   a{
     margin-left: 10px;
     margin-right: 10px;
-    color: black;
+    color: opacity("secondaryBlack-100");
   }
 </style>
