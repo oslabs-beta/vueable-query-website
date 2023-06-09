@@ -14,6 +14,14 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
       <h2 class="secondary-title">
         See the metrics you've been missing!
       </h2>
+      <div class="button-container">
+        <a class="install-button" 
+        href="https://chrome.google.com/webstore/detail/vueable-query/dnhcogggodnfhnnfimapejbkkihmflaa"
+        >
+          Install Now
+        </a>
+      </div>
+
     </div>
 </div>
 </template>
@@ -28,7 +36,7 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
     margin: 10;
   }
 
-  .logo{
+  .logo, .button-container {
     display: flex;
     justify-content: center;
   }
@@ -38,6 +46,27 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
     text-align: center;
 
   }
+
+
+
+  .install-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  font-size: 28px;
+}
+
+.install-button:hover {
+  background-color: #45a049;
+}
+
+.install-button:active {
+  background-color: #3e8e41;
+}
 
 
 </style>
