@@ -33,7 +33,7 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   h1 {
     color: opacity("primaryBlack");
     text-align: center;
-    margin: 10;
+    margin: 10px;
   }
 
   .logo, .button-container {
@@ -44,20 +44,21 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   h2 {
     color: opacity("secondaryBlack-85");
     text-align: center;
-
+    margin: 15px;
   }
 
 
 
   .install-button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 15px 25px;
   background-color: #4CAF50;
   color: #FFFFFF;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 4px;
-  font-size: 28px;
+  border-radius: 8px;
+  font-size: 20px;
+  margin: 10px;
 }
 
 .install-button:hover {
@@ -67,6 +68,5 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
 .install-button:active {
   background-color: #3e8e41;
 }
-
 
 </style>

@@ -27,7 +27,7 @@ import Header from "./components/Header.vue";
 
   .title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 48px;
+    font-size: 44px;
   }
 
   .secondary-title, .tertiary-title {
@@ -55,7 +55,7 @@ import Header from "./components/Header.vue";
 
 
   .secondary-title {
-    font-size: 36px;
+    font-size: 30px;
   }
 
   .tertiary-title {
