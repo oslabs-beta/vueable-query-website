@@ -35,8 +35,16 @@ const contributors = [
       <div>
         <Intro/>
       </div>
+
+              
+      <Download/>
+      
       <div id="mid-gradient">
-        <Download/>
+        <h3 class="tertiary-title">About</h3>
+          <p>Vueable Query is a Chrome Extension Dev Tool for <a href="https://github.com/TanStack/query">Tanstack Query for Vue</a>. 
+            It is designed to provide timeline visualization and performance metrics in a convenient Dev Tool Panel.
+          </p>
+
         <h3 class="tertiary-title">Features</h3>
           <ul>
             <li>A timeline to visualize the query history</li>
@@ -72,14 +80,15 @@ main {
     display: flex;
     justify-content: center;
   }
-  li{  
+  li, p{  
     color: opacity("secondaryBlack-80");
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
   }
+
  .inner {
   width: $centerProportion;
   }

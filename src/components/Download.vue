@@ -4,9 +4,9 @@ import Codeblock from './Codeblock.vue';
 
 <template>
   <section>
-    
-    <h3 class="tertiary-title">Download</h3>
     <br>
+    <br>
+    <h3 class="tertiary-title">Download</h3>
     <p id="download">
       Download in just four steps!
     </p>
@@ -34,27 +34,18 @@ import Codeblock from './Codeblock.vue';
   
   p {
     color: opacity("secondaryBlack-80");
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 29px;
   }
 
-  #download {
-    height: 58px;
-    margin-bottom: 0;
-  }
-
-  #load {
-    height: 29px;
-  }
 
   img {
     box-sizing: border-box;
-    width: 800px;
- 
+    width: 100%;
+    max-width: 1000px;
     background: opacity("grey-100");
     border: $border;
     box-shadow: $shadow;

@@ -11,7 +11,7 @@ import IconMedium from "./icons/IconMedium.vue";
     <div class="inner">
       <div class="title-group">
         <h3>
-          <IconLogo/> Vueable Query
+          <a href=""><IconLogo/> </a>Vueable Query
         </h3>
       </div>
       <div class="links-group">
@@ -64,6 +64,6 @@ import IconMedium from "./icons/IconMedium.vue";
   a{
     margin-left: 10px;
     margin-right: 10px;
-    color: black;
+    color: opacity("secondaryBlack-100");
   }
 </style>
