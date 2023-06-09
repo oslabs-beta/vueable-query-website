@@ -7,8 +7,12 @@ import Codeblock from './Codeblock.vue';
     <br>
     <br>
     <h3 class="tertiary-title">Download</h3>
+    <div>
+      <p> Check us out on the Chrome Extension store! </p>
+      <a class="install-button" href="https://chrome.google.com/webstore/detail/vueable-query/dnhcogggodnfhnnfimapejbkkihmflaa">Install Now</a>
+    </div>
     <p id="download">
-      Download in just four steps!
+      Or download from GitHub in 4 steps
     </p>
     <Codeblock/>
     <br>
@@ -51,4 +55,22 @@ import Codeblock from './Codeblock.vue';
     box-shadow: $shadow;
     border-radius: $borderRadius;
   }
+
+  .install-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.install-button:hover {
+  background-color: #45a049;
+}
+
+.install-button:active {
+  background-color: #3e8e41;
+}
 </style>
