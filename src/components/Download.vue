@@ -4,21 +4,17 @@ import Codeblock from './Codeblock.vue';
 
 <template>
   <section>
-    <br>
-    <br>
-    <h3 class="tertiary-title">Download</h3>
+    <h3 class="tertiary-title">Alternate Download</h3>
     <p id="download">
-      Download in just four steps!
+      Want to download the source code and build your own extension?<br>
+      Download from GitHub and build the extension with the following commands.<br>
+      Then load the dist folder in Google Chrome as an unpacked Chrome Extension.
     </p>
     <Codeblock/>
     <br>
-    <br>
-    <p id="load">
-      Then load in chrome:
-    </p>
-    <div>
+    <!-- <div>
       <img src="./gifs/loading_Extension_Demo.gif" alt="load-extension-demo">
-    </div>
+    </div> -->
   </section>
 
 </template>
@@ -51,4 +47,6 @@ import Codeblock from './Codeblock.vue';
     box-shadow: $shadow;
     border-radius: $borderRadius;
   }
+
+  
 </style>
