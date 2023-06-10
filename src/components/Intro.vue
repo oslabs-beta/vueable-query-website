@@ -56,9 +56,11 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   color: opacity("primaryWhite-100");;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: $borderRadius;
   font-size: 20px;
   margin: 10px;
+  box-shadow: $shadow;
+  border: $border;
 }
 
 .install-button:hover {
