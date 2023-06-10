@@ -25,8 +25,8 @@
   .codeblock {
     padding: 1rem;
     border-radius: $borderRadius;
-    background-color: #000;
-    color: #eee;
+    background-color: opacity("secondaryBlack-100");
+    color: opacity("primaryWhite-100");;
     font-family: 'Ubuntu Mono', monospace;
     border: $border;
     box-shadow: $shadow;

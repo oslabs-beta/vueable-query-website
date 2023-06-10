@@ -35,14 +35,10 @@ const contributors = [
       <div>
         <Intro/>
       </div>
-
-              
-      <Download/>
-      
       <div id="mid-gradient">
         <h3 class="tertiary-title">About</h3>
-          <p>Vueable Query is a Chrome Extension Dev Tool for <a href="https://github.com/TanStack/query">Tanstack Query for Vue</a>. 
-            It is designed to provide timeline visualization and performance metrics in a convenient Dev Tool Panel.
+          <p>Vueable Query is an open source developer tool for <a href="https://github.com/TanStack/query">Tanstack Query for Vue</a>. 
+            As a Chrome extension, it provides timeline visualization and performance metrics in a convenient dev tool panel.
           </p>
 
         <h3 class="tertiary-title">Features</h3>
@@ -52,6 +48,7 @@ const contributors = [
             <li>Highlighting on click and hover</li>
             <li>Tooltip displayed on hover</li>
           </ul>
+        <Download/>
         <Demo />
         <section id="bottom-gradient">
         <h3 class="tertiary-title">Contributors</h3>
@@ -71,28 +68,35 @@ const contributors = [
 </template>
 
 <style scoped lang="scss">
-@import '../variables.scss';
-main {
-  display: flex;
-  justify-content: center;
-  .spacing {
-    width: 100%;
+  @import '../variables.scss';
+  main {
     display: flex;
     justify-content: center;
+    .spacing {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    li, p{  
+      color: opacity("secondaryBlack-80");
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 29px;
+    }
+
+  .inner {
+    width: $centerProportion;
+    }
+    padding: 3em 0 5em 0;
+    /*background-color: opacity("secondaryWhite");*/
   }
-  li, p{  
-    color: opacity("secondaryBlack-80");
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 29px;
+  a {
+    color: opacity("blue-100");
   }
 
- .inner {
-  width: $centerProportion;
+  a:visited {
+    color: opacity("blue-100");
   }
-  padding: 3em 0 5em 0;
-  /*background-color: opacity("secondaryWhite");*/
-}
 </style>
