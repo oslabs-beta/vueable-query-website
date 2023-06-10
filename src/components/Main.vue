@@ -93,10 +93,10 @@ const contributors = [
     /*background-color: opacity("secondaryWhite");*/
   }
   a {
-    color: #028090;
+    color: opacity("blue-100");
   }
 
   a:visited {
-    color: #028090;
+    color: opacity("blue-100");
   }
 </style>

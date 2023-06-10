@@ -52,8 +52,8 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
   .install-button {
   display: inline-block;
   padding: 15px 25px;
-  background-color: #4CAF50;
-  color: #FFFFFF;
+  background-color: opacity("blue-90");;
+  color: opacity("primaryWhite-100");;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
@@ -62,11 +62,11 @@ import IconColorLogo from "./icons/IconColorLogo.vue";
 }
 
 .install-button:hover {
-  background-color: #45a049;
+  background-color: opacity("blue-100");
 }
 
 .install-button:active {
-  background-color: #3e8e41;
+  background-color: opacity("blue-95");
 }
 
 </style>
