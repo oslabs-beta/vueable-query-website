@@ -5,7 +5,7 @@ import Download from "./Download.vue";
 import Demo from "./Demo.vue";
 const contributors = [
   {
-    githubHandle: 'annaduong94',
+    githubHandle: 'annaduong17',
     linkedin: 'https://www.linkedin.com/in/anna-duong-a8719823a/',
     name: 'Anna Duong'
   },
